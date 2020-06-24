@@ -6,6 +6,6 @@ Expected Result : 'resta$t'
 inp=input("enter your string: ")
 for i in inp[1::1]:
     if i==inp[0]:
-        new_str=inp[0]+inp[1:].replace(i,"$")
-print(new_str)
+        inp=inp[0]+inp[1:].replace(i,"$")
+print(inp)
 
