@@ -1,10 +1,7 @@
 """19. Write a Python program to create Fibonacci series upto n using Lambda."""
 num=int(input("enter a number: "))
-get_Fibonacci=lambda i:i+(i+1)
-count=0
-fibo_lis=[0]
-while(count<num):
-    x=get_Fibonacci(count)
-    fibo_lis.append(x)
-    count+=1
-print(fibo_lis)
+lis=[]
+for i in range(num+1):
+    lis.append(i)
+get_Fibonacci=lambda num:num if num<=1 else get_Fibonacci(num-1)+get_Fibonacci(num-2)
+print(list(map(get_Fibonacci,lis)))
