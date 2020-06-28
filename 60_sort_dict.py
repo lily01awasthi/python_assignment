@@ -1,6 +1,4 @@
 """14. Write a Python program to sort a list of dictionaries using Lambda. """
-sorted_dict=lambda lis: lis.sort()
-lis_dict1=[{1:"2",7:"1",3:"4",9:"0"},{"b":"ball","a":"apple:","c":"cat"}]
-print(sorted_dict(lis_dict1))
-
-#not done.................!
+sample_list=[{"fruit":"apple","price":120},{"fruit":"orange","price":60},{"fruit":"mango","price":100}]
+fetch_price=lambda x:x["price"]
+print(sorted(sample_list,key=fetch_price))
